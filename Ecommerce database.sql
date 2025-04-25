@@ -145,7 +145,7 @@ INSERT INTO product_item (product_id, sku, price, stock_quantity) VALUES
 (3, 'GWATCH-BLUE', 199.99, 15);
 
 -- Product Variation
-INSERT INTO product_variation (product_item_id, color_id, size_option_id) VALUES
+INSERT INTO product_variation (product_item_id, color_id, sizeoption_id) VALUES
 (2, 1, 5),  -- Nike Air Max, Black, Size 42
 (3, 3, NULL);  -- Galaxy Watch, Blue, No size
 
