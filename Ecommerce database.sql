@@ -131,7 +131,7 @@ INSERT INTO size_category (name) VALUES
 ('Shoe Sizes');
 
 -- Size Option
-INSERT INTO size_option (size_category_id, label) VALUES
+INSERT INTO size_option (category_id, label) VALUES
 (1, 'S'),
 (1, 'M'),
 (1, 'L'),
@@ -145,7 +145,7 @@ INSERT INTO product_item (product_id, sku, price, stock_quantity) VALUES
 (3, 'GWATCH-BLUE', 199.99, 15);
 
 -- Product Variation
-INSERT INTO product_variation (product_item_id, color_id, sizeoption_id) VALUES
+INSERT INTO product_variation (product_itemid, color_id, sizeoption_id) VALUES
 (2, 1, 5),  -- Nike Air Max, Black, Size 42
 (3, 3, NULL);  -- Galaxy Watch, Blue, No size
 
@@ -161,7 +161,7 @@ INSERT INTO attribute_type (name, data_type) VALUES
 ('Waterproof', 'boolean');
 
 -- Product Attribute
-INSERT INTO product_attribute (product_id, attribute_category_id, attribute_type_id, name, value) VALUES
+INSERT INTO product_attribute (product_id, attr_categoryid, attr_typeid, name, value) VALUES
 (2, 1, 1, 'Material', 'Mesh and Rubber'),
 (1, 2, 2, 'Battery Life', '24 hours'),
 (3, 2, 3, 'Waterproof', 'true');
